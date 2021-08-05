@@ -15,7 +15,7 @@ console.log('1. Test - should say "Hello World!"', hello());
 // 2. Function to return a personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  //return a phrase with the passed in variable
+  //return a phrase with the passed in iable
   return `Hello there, ${name}!`;
 }
 // Remember to call the function to test
@@ -85,7 +85,7 @@ console.log('6. getLast with empty array - should say "undefined"', getLast(arra
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
   //check each element in the array
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     //if there is a match, immediately return true
     if (array[i] === value) {
       return true;
@@ -122,7 +122,7 @@ console.log( '8. isFirstLetter - should say false', isFirstLetter('z', 'apple') 
 function sumAll(array) {
   let sum = 0
   // TODO: loop to add items
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     //keep increasing sum total with array elements
     sum = array[i] + sum;
   }
@@ -139,7 +139,7 @@ function positiveNumbers(array) {
   //create a new array
   let newArray = [];
   //loop through each array element
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     //add only positive numbers to the new array
     if (array[i] > 0) {
       newArray.push(array[i]);
