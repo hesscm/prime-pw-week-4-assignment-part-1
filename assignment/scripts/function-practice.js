@@ -29,7 +29,7 @@ console.log('3. Test - should say "9"', addNumbers(5,4));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( firstNumber, secondNumber, thirdNumber){
-return firstNumber * secondNumber * thirdNumber;
+  return firstNumber * secondNumber * thirdNumber;
 }
 console.log('3. Test - should say "24"', multiplyThree(2,3,4));
 
